@@ -1,0 +1,11 @@
+<!-- Inside <application> ... </application> -->
+
+<!-- Your AdMob app ID (AdMob console → Apps). Required by the GMA SDK even if you only use AdSense. -->
+<meta-data
+    android:name="com.google.android.gms.ads.APPLICATION_ID"
+    android:value="ca-app-pub-XXXXXXXXXXXXXXXX~YYYYYYYYYY" />
+
+<!-- Tells the SDK it is being used for WebView ads only. Required for MobileAds.registerWebView. -->
+<meta-data
+    android:name="com.google.android.gms.ads.INTEGRATION_MANAGER"
+    android:value="webview" />

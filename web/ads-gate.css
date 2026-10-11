@@ -1,0 +1,2 @@
+/* Hide every ad container while the gate is on. Give your ad wrappers the class `ad-slot`. */
+html.ads-gate-off .ad-slot { display: none !important; }
