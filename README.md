@@ -4,6 +4,8 @@
 
 [한국어 README](./README.ko.md)
 
+![How the web gate decides whether to serve AdSense](assets/flow.svg)
+
 If your Capacitor (or any WebView) app loads your website and that website runs AdSense, every ad request from inside the app is an **unapproved WebView request** unless the WebView is registered with the Google Mobile Ads SDK. Google started enforcing this hard: Policy Center fills with violations and mobile CPC collapses while ads *appear* to keep working.
 
 This repo is the complete fix we use in production at [ETF Shopping](https://etfshopping.com) (a Korean/Japanese ETF research site with a Capacitor app on both stores), including the parts Google's docs don't cover: the website-side gate for users who haven't updated, the signals that actually tell you a WebView is registered, and the traps we fell into.
